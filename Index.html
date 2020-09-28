@@ -1,1 +1,37 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>formulario</title>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+</head>
+
+<body>
+  <!-- Project -->
+  <section class="formulario">
+    <h2 class="titulo">mandanos tu sugerencia</h2>
+    <form class="form__formulario" action="registrar.php" method="get" accept-charset="utf-8" onsubmit="return validar();">
+      <h2 class="form__titulo">ingresa tus datos</h2>
+      <input type="text" name="nombre" id="nombre" placeholder="*Nombre*">
+      <input type="text" name="apellido" id="apellido" placeholder="*Apellido*">
+      <input type="text" name="correo" id="correo" placeholder="*Correo*">
+      <input type="text" name="usuario" id="usuario" placeholder="*Usurio*">
+      <input type="password" name="contraseña" id="contraseña" placeholder="*Contraseña*">
+      <input type="text" name="telefono" id="telefono" placeholder="*Telefono*">
+      <textarea class="mensaje" name="mensaje" id=mensaje rows="8" cols="40" placeholder="*Escriba su mensaje*"></textarea>
+      <input class="btn-enviar" type="submit" name="enviar" id="enviar" value="Enviar Comentario" />
+    </form>
+    
+  </section>
+  
+  
+  
+  <script src="main.js"></script>
+</body>
+</html>
